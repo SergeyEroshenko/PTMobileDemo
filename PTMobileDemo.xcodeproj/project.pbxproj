@@ -18,7 +18,7 @@
 		68EC7BAF256A7709005BFA51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EC7BAD256A7709005BFA51 /* Main.storyboard */; };
 		68EC7BB1256A770D005BFA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68EC7BB0256A770D005BFA51 /* Assets.xcassets */; };
 		68EC7BB4256A770D005BFA51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EC7BB2256A770D005BFA51 /* LaunchScreen.storyboard */; };
-		7D9C85C05077B59A048C66D5 /* libPods-PTMobileDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6586EC020F7B8E3F4C67879 /* libPods-PTMobileDemo.a */; };
+		966C0242F5A99E192C7E79D9 /* Pods_PTMobileDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA42F9B3CF64224F1B5C7FA3 /* Pods_PTMobileDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +37,8 @@
 		68EC7BB0256A770D005BFA51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68EC7BB3256A770D005BFA51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68EC7BB5256A770D005BFA51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA42F9B3CF64224F1B5C7FA3 /* Pods_PTMobileDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PTMobileDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC19EBAAAA8F2B1A421B22AC /* Pods-PTMobileDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTMobileDemo.release.xcconfig"; path = "Target Support Files/Pods-PTMobileDemo/Pods-PTMobileDemo.release.xcconfig"; sourceTree = "<group>"; };
-		E6586EC020F7B8E3F4C67879 /* libPods-PTMobileDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PTMobileDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2C80D2DE8FC4F049512A46 /* Pods-PTMobileDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTMobileDemo.debug.xcconfig"; path = "Target Support Files/Pods-PTMobileDemo/Pods-PTMobileDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D9C85C05077B59A048C66D5 /* libPods-PTMobileDemo.a in Frameworks */,
+				966C0242F5A99E192C7E79D9 /* Pods_PTMobileDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 		892BE8FA03196309028A433F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E6586EC020F7B8E3F4C67879 /* libPods-PTMobileDemo.a */,
+				AA42F9B3CF64224F1B5C7FA3 /* Pods_PTMobileDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

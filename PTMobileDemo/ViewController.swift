@@ -11,6 +11,7 @@ import UIKit
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
+    
     var inputImage: CIImage!
     
     override func viewDidLoad() {
@@ -42,6 +43,32 @@ import UIKit
         }
     } ()
     
+    @IBAction func openFile(_ sender: Any) {
+        
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.sourceType = .savedPhotosAlbum
+        present(picker, animated: true)
+    }
+    
+    @IBAction func takePhoto(_ sender: Any) {
+        
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.sourceType = .camera
+        picker.cameraCaptureMode = .photo
+        present(picker, animated: true)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true)
+        textView.text = "Press Infer, please."
+        guard let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+            else { fatalError("no image from image picker") }
+        
+        imageView.image = selectedImage
+    }
+    
     @IBAction func inferNow(_ sender: Any) {
 
         let resizedImage = imageView.image!.resized(to: CGSize(width: 224, height: 224))
@@ -62,32 +89,5 @@ import UIKit
         textView.text = text
 
     }
-   
-    @IBAction func openFile(_ sender: Any) {
-        
-        let pickerController = UIImagePickerController()
-        pickerController.delegate = self
-        pickerController.sourceType = .savedPhotosAlbum
-        present(pickerController, animated: true)
-    }
-    /*
-    private func imagePickerController(_ picker: UIImagePickerController,
-                                       didFinishPickingMediaWithInfo info: [String : Any]) {
-        picker.dismiss(animated: true)
-        textView.text = "Analyzing Image…"
-        imageView.image = nil
-        
-    }
-    */
-    @IBAction func takePicture(_ sender: Any) {
-        /*
-        let picker = UIImagePickerController()
-        picker.delegate = self
-        picker.sourceType = .camera
-        picker.cameraCaptureMode = .photo
-        present(picker, animated: true)
-         */
-    }
-
-        
+    
 }
