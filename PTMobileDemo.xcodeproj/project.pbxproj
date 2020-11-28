@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68A70A65256A7E1F00B56F46 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68A70A62256A7E1F00B56F46 /* words.txt */; };
+		68A70A66256A7E1F00B56F46 /* kitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68A70A63256A7E1F00B56F46 /* kitten.jpg */; };
+		68A70A6D256A7F1700B56F46 /* TorchModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68A70A6C256A7F1700B56F46 /* TorchModule.mm */; };
+		68A70A70256A806100B56F46 /* UIImage+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A70A6F256A806100B56F46 /* UIImage+Helper.swift */; };
+		68A70A74256AB6FE00B56F46 /* model.pt in Resources */ = {isa = PBXBuildFile; fileRef = 68A70A73256AB6FD00B56F46 /* model.pt */; };
 		68EC7BA8256A7709005BFA51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EC7BA7256A7709005BFA51 /* AppDelegate.swift */; };
 		68EC7BAA256A7709005BFA51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EC7BA9256A7709005BFA51 /* SceneDelegate.swift */; };
 		68EC7BAC256A7709005BFA51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EC7BAB256A7709005BFA51 /* ViewController.swift */; };
 		68EC7BAF256A7709005BFA51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EC7BAD256A7709005BFA51 /* Main.storyboard */; };
 		68EC7BB1256A770D005BFA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68EC7BB0256A770D005BFA51 /* Assets.xcassets */; };
 		68EC7BB4256A770D005BFA51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EC7BB2256A770D005BFA51 /* LaunchScreen.storyboard */; };
+		7D9C85C05077B59A048C66D5 /* libPods-PTMobileDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6586EC020F7B8E3F4C67879 /* libPods-PTMobileDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68A70A62256A7E1F00B56F46 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = SOURCE_ROOT; };
+		68A70A63256A7E1F00B56F46 /* kitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitten.jpg; sourceTree = SOURCE_ROOT; };
+		68A70A6A256A7F1700B56F46 /* PTMobileDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTMobileDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		68A70A6B256A7F1700B56F46 /* TorchModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorchModule.h; sourceTree = "<group>"; };
+		68A70A6C256A7F1700B56F46 /* TorchModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TorchModule.mm; sourceTree = "<group>"; };
+		68A70A6F256A806100B56F46 /* UIImage+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Helper.swift"; sourceTree = "<group>"; };
+		68A70A73256AB6FD00B56F46 /* model.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.pt; sourceTree = SOURCE_ROOT; };
 		68EC7BA4256A7709005BFA51 /* PTMobileDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTMobileDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EC7BA7256A7709005BFA51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68EC7BA9256A7709005BFA51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +37,9 @@
 		68EC7BB0256A770D005BFA51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68EC7BB3256A770D005BFA51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68EC7BB5256A770D005BFA51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC19EBAAAA8F2B1A421B22AC /* Pods-PTMobileDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTMobileDemo.release.xcconfig"; path = "Target Support Files/Pods-PTMobileDemo/Pods-PTMobileDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E6586EC020F7B8E3F4C67879 /* libPods-PTMobileDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PTMobileDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2C80D2DE8FC4F049512A46 /* Pods-PTMobileDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTMobileDemo.debug.xcconfig"; path = "Target Support Files/Pods-PTMobileDemo/Pods-PTMobileDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9C85C05077B59A048C66D5 /* libPods-PTMobileDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68A70A69256A7E4200B56F46 /* TorchBridge */ = {
+			isa = PBXGroup;
+			children = (
+				68A70A6B256A7F1700B56F46 /* TorchModule.h */,
+				68A70A6C256A7F1700B56F46 /* TorchModule.mm */,
+				68A70A6A256A7F1700B56F46 /* PTMobileDemo-Bridging-Header.h */,
+			);
+			path = TorchBridge;
+			sourceTree = "<group>";
+		};
 		68EC7B9B256A7709005BFA51 = {
 			isa = PBXGroup;
 			children = (
 				68EC7BA6256A7709005BFA51 /* PTMobileDemo */,
 				68EC7BA5256A7709005BFA51 /* Products */,
+				CE9DA2CCA0BE095A6BA69054 /* Pods */,
+				892BE8FA03196309028A433F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +85,11 @@
 		68EC7BA6256A7709005BFA51 /* PTMobileDemo */ = {
 			isa = PBXGroup;
 			children = (
+				68A70A73256AB6FD00B56F46 /* model.pt */,
+				68A70A6F256A806100B56F46 /* UIImage+Helper.swift */,
+				68A70A69256A7E4200B56F46 /* TorchBridge */,
+				68A70A63256A7E1F00B56F46 /* kitten.jpg */,
+				68A70A62256A7E1F00B56F46 /* words.txt */,
 				68EC7BA7256A7709005BFA51 /* AppDelegate.swift */,
 				68EC7BA9256A7709005BFA51 /* SceneDelegate.swift */,
 				68EC7BAB256A7709005BFA51 /* ViewController.swift */,
@@ -67,6 +101,23 @@
 			path = PTMobileDemo;
 			sourceTree = "<group>";
 		};
+		892BE8FA03196309028A433F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6586EC020F7B8E3F4C67879 /* libPods-PTMobileDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE9DA2CCA0BE095A6BA69054 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C80D2DE8FC4F049512A46 /* Pods-PTMobileDemo.debug.xcconfig */,
+				CC19EBAAAA8F2B1A421B22AC /* Pods-PTMobileDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +125,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68EC7BB8256A770E005BFA51 /* Build configuration list for PBXNativeTarget "PTMobileDemo" */;
 			buildPhases = (
+				CCC9EE8E1D265C2964A8766D /* [CP] Check Pods Manifest.lock */,
 				68EC7BA0256A7709005BFA51 /* Sources */,
 				68EC7BA1256A7709005BFA51 /* Frameworks */,
 				68EC7BA2256A7709005BFA51 /* Resources */,
@@ -98,6 +150,7 @@
 				TargetAttributes = {
 					68EC7BA3256A7709005BFA51 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -124,20 +177,50 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A70A66256A7E1F00B56F46 /* kitten.jpg in Resources */,
 				68EC7BB4256A770D005BFA51 /* LaunchScreen.storyboard in Resources */,
 				68EC7BB1256A770D005BFA51 /* Assets.xcassets in Resources */,
+				68A70A65256A7E1F00B56F46 /* words.txt in Resources */,
 				68EC7BAF256A7709005BFA51 /* Main.storyboard in Resources */,
+				68A70A74256AB6FE00B56F46 /* model.pt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CCC9EE8E1D265C2964A8766D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PTMobileDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		68EC7BA0256A7709005BFA51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A70A6D256A7F1700B56F46 /* TorchModule.mm in Sources */,
 				68EC7BAC256A7709005BFA51 /* ViewController.swift in Sources */,
+				68A70A70256A806100B56F46 /* UIImage+Helper.swift in Sources */,
 				68EC7BA8256A7709005BFA51 /* AppDelegate.swift in Sources */,
 				68EC7BAA256A7709005BFA51 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,11 +366,14 @@
 		};
 		68EC7BB9256A770E005BFA51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC2C80D2DE8FC4F049512A46 /* Pods-PTMobileDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MS38LC3TYA;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PTMobileDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,6 +381,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.eroshenko.PTMobileDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PTMobileDemo/TorchBridge/PTMobileDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,11 +390,14 @@
 		};
 		68EC7BBA256A770E005BFA51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC19EBAAAA8F2B1A421B22AC /* Pods-PTMobileDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MS38LC3TYA;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PTMobileDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,6 +405,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.eroshenko.PTMobileDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PTMobileDemo/TorchBridge/PTMobileDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
