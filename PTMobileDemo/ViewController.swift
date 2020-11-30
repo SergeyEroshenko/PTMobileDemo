@@ -12,21 +12,37 @@ import UIKit
                        UIImagePickerControllerDelegate,
                        UINavigationControllerDelegate {
 
+    //Camera Capture requiered properties
+    var imagePickers:UIImagePickerController?
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
     
     var inputImage: CIImage!
     
     override func viewDidLoad() {
+        addCameraInView()
         super.viewDidLoad()
-        
-        guard let image = UIImage(named: "kitten.jpg") else {
-            fatalError("no starting image")
-        }
-        
-        imageView.image = image
-        
     }
+    
+    func addCameraInView(){
+
+        imagePickers = UIImagePickerController()
+        if UIImagePickerController.isCameraDeviceAvailable( UIImagePickerController.CameraDevice.rear) {
+            imagePickers?.delegate = self
+            imagePickers?.sourceType = UIImagePickerController.SourceType.camera
+
+            //add as a childviewcontroller
+            addChild(imagePickers!)
+
+            // Add the child's View as a subview
+            self.imageView.addSubview((imagePickers?.view)!)
+            imagePickers?.view.frame = imageView.bounds
+            imagePickers?.allowsEditing = false
+            imagePickers?.showsCameraControls = false
+            imagePickers?.view.autoresizingMask = [.flexibleWidth,  .flexibleHeight]
+            }
+        }
     
     private lazy var module: TorchModule = {
         if let filePath = Bundle.main.path(forResource: "model", ofType: "pt"),
@@ -51,15 +67,6 @@ import UIKit
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = .savedPhotosAlbum
-        present(picker, animated: true)
-    }
-    
-    @IBAction func takePhoto(_ sender: Any) {
-        
-        let picker = UIImagePickerController()
-        picker.delegate = self
-        picker.sourceType = .camera
-        picker.cameraCaptureMode = .photo
         present(picker, animated: true)
     }
     
