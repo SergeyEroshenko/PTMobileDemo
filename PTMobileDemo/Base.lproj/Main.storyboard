@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,48 +13,78 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PTMobileDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kitten.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AlG-z4-8Ra">
-                                <rect key="frame" x="0.0" y="44" width="375" height="411"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAH-wU-vDN">
-                                <rect key="frame" x="172" y="497" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAH-wU-vDN">
+                                <rect key="frame" x="144.5" y="434" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XgO-2v-XHu"/>
+                                </constraints>
                                 <state key="normal" title="Infer"/>
                                 <connections>
                                     <action selector="inferNow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0j-VC-bC9"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You inference here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hxP-5a-fM3">
-                                <rect key="frame" x="20" y="545" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You inference here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hxP-5a-fM3">
+                                <rect key="frame" x="0.0" y="471" width="320" height="96"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hxP-5a-fM3" secondAttribute="height" multiplier="10:3" id="sy4-bR-fWD"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="rect" keyPath="textContainerInset">
+                                        <rect key="value" x="10" y="10" width="17" height="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyn-zz-oXL">
-                                <rect key="frame" x="270" y="497" width="89" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Open"/>
-                                <connections>
-                                    <action selector="openFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5L-ro-xAL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOJ-Xi-l1S">
-                                <rect key="frame" x="20" y="497" width="76" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOJ-Xi-l1S">
+                                <rect key="frame" x="16" y="434" width="76" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="e2l-QK-eup"/>
+                                </constraints>
                                 <state key="normal" title="Take photo"/>
                                 <connections>
                                     <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hd5-eT-RVQ"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitten.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AlG-z4-8Ra">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="427"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AlG-z4-8Ra" secondAttribute="height" multiplier="320:427" id="ktX-O6-ddw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyn-zz-oXL">
+                                <rect key="frame" x="244" y="434" width="38" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TqY-sM-qPp"/>
+                                </constraints>
+                                <state key="normal" title="Open"/>
+                                <connections>
+                                    <action selector="openFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5L-ro-xAL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tyn-zz-oXL" secondAttribute="trailing" constant="38" id="0Ag-O7-Oe7"/>
+                            <constraint firstItem="EOJ-Xi-l1S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DDr-qJ-Ufi"/>
+                            <constraint firstItem="hxP-5a-fM3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GxQ-mc-Srw"/>
+                            <constraint firstItem="EOJ-Xi-l1S" firstAttribute="top" secondItem="AlG-z4-8Ra" secondAttribute="bottom" constant="7" id="Iky-Wd-0xu"/>
+                            <constraint firstItem="AlG-z4-8Ra" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TOT-GV-CYx"/>
+                            <constraint firstItem="wAH-wU-vDN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vna-2F-FYL"/>
+                            <constraint firstItem="AlG-z4-8Ra" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ehu-if-Yan"/>
+                            <constraint firstItem="tyn-zz-oXL" firstAttribute="top" secondItem="AlG-z4-8Ra" secondAttribute="bottom" constant="7" id="elI-Vn-Bjq"/>
+                            <constraint firstItem="wAH-wU-vDN" firstAttribute="top" secondItem="AlG-z4-8Ra" secondAttribute="bottom" constant="7" id="lgM-AX-mjh"/>
+                            <constraint firstItem="hxP-5a-fM3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n5h-pl-cP8"/>
+                            <constraint firstItem="AlG-z4-8Ra" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nL2-uE-oec"/>
+                            <constraint firstItem="hxP-5a-fM3" firstAttribute="top" secondItem="wAH-wU-vDN" secondAttribute="bottom" constant="7" id="okD-z1-MWE"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="AlG-z4-8Ra" id="Vx5-np-wtH"/>
@@ -63,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.399999999999999" y="93.103448275862078"/>
+            <point key="canvasLocation" x="15" y="91.901408450704224"/>
         </scene>
     </scenes>
     <resources>
